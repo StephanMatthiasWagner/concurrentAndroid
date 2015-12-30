@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="5dp">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_gravity="left"
+                    android:layout_weight=".49"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="0dp"
+                    android:background="#A00000FF">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                  android:text="First Calculation"
+                  android:textColor="#FFFFFF"
+                  android:id="@+id/firstSubscription"
+                  android:gravity="center_horizontal"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_startSubscription"
+                android:id="@+id/startSubscription1"
+                android:onClick="initSubscription"
+                android:layout_below="@id/firstSubscription"/>
+
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_clearFirstButton"
+                android:id="@+id/clearOutput1"
+                android:onClick="clearOutput"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/startSubscription1"
+                android:layout_below="@id/firstSubscription"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="15dp"
+                  android:textColor="#FFFFFF"
+                  android:id="@+id/firstObserverOutput"
+                  android:gravity="center_horizontal"
+                  android:layout_below="@id/startSubscription1"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_gravity="right"
+                    android:layout_weight=".49"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="0dp"
+                    android:background="#A00000FF">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                  android:text="Second Calculation"
+                  android:textColor="#FFFFFF"
+                  android:id="@+id/secondSubscription"
+                  android:gravity="center_horizontal"/>
+
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_startSubscription"
+                android:id="@+id/startSubscription2"
+                android:onClick="initSubscription"
+                android:layout_below="@id/secondSubscription"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_clearSecondButton"
+                android:id="@+id/clearOutput2"
+                android:onClick="clearOutput"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/startSubscription2"
+                android:layout_below="@id/secondSubscription"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="15dp"
+                  android:textColor="#FFFFFF"
+                  android:id="@+id/secondObserverOutput"
+                  android:gravity="center_horizontal"
+                  android:layout_below="@id/startSubscription2"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
